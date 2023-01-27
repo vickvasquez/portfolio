@@ -1,0 +1,124 @@
+.navigationBar,
+.navigationWrapper {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
+
+.navigationWrapper {
+  background-color: var(--background-navigation);
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: navigation 0.8s ease-in-out;
+}
+
+.navigationWrapper a {
+  text-transform: uppercase;
+  font-size: 30px;
+  opacity: .8;
+  transition: opacity 0.5s ease-in;
+  padding: 10px;
+}
+
+.navigationWrapper a:hover {
+  opacity: 1;
+}
+
+.navigationBar {
+  justify-content: flex-end;
+  padding: 10px 60px;
+  height: 100px;
+  z-index: 2;
+  align-items: center;
+}
+
+.closeButton,
+.hamburgerMenu {
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
+.line {
+  width: 36px;
+  height: 2px;
+  display: block;
+  margin: 6px 0;
+  position: relative;
+}
+
+.hamburgerMenu .line::before {
+  transition: all 0.2s ease-in;
+  content: "";
+  position: absolute;
+  background-color: var(--white);
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.hamburgerMenu .line:nth-child(2)::before {
+  width: 75%;
+}
+
+.hamburgerMenu .line:last-child::before {
+  width: 100%;
+}
+
+.hamburgerMenu:hover > .line::before {
+  width: 100%;
+}
+
+.closeWrapper {
+  display: block;
+  position: absolute;
+  right: 60px;
+  top: 45px;
+}
+
+.closeButton {
+  position: relative;
+}
+
+.closeButton .line {
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+}
+
+.closeButton .line:first-child {
+  transform: rotate(45deg);
+}
+
+.closeButton .line:last-child {
+  transform: rotate(138deg);
+}
+
+@media screen and (max-width: 768px) {
+  .navigationBar {
+    padding: 10px
+  }
+
+  .closeWrapper {
+    right: 10px;
+  }
+}
+
+@keyframes navigation {
+  0% {
+    top: -100%
+  }
+
+  100% {
+    top: 0;
+  }
+
+}
