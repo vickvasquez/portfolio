@@ -2,32 +2,11 @@
   position: relative;
 }
 
-.socialMedia,
 .homeContent {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.socialMedia {
-  background-color: transparent;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  padding: 0 60px;
-}
-
-.socialMedia img {
-  opacity: 0.5;
-  margin: 8px;
-  transition: opacity 0.5s ease;
-  border-radius: 4px;
-}
-
-.socialMedia a:hover>img {
-  opacity: 1;
 }
 
 .homeContent {
@@ -65,15 +44,6 @@
   width: 17ch;
   animation: typing 3s steps(17) infinite, blink 0.5s infinite step-end alternate;
   margin-left: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .socialMedia {
-    top: unset;
-    flex-direction: row;
-    padding: 10px 0;
-    width: 100%;
-  }
 }
 
 @keyframes typing {
