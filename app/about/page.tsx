@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
 import styles from './about.module.css'
-
 import image from '../../public/assets/about-me.jpg'
+import { ProgressBar } from '@/components'
+import about from '../../data/about.json'
 
 function Home() {
   return (
@@ -28,6 +29,16 @@ function Home() {
           </a>
         </article>
         <Image placeholder='blur' className={styles.image} src={image} alt="Developer" />
+      </section>
+      <section>
+        <h3 className={styles.titleSkills}>Some of my <span className='text-red'>Skills</span></h3>
+        <article className={styles.containerSkills}>
+          {
+            about.skills.map(skill => (
+              <ProgressBar title={skill.name} progress={skill.level} key={skill.name}/>
+            ))
+          }
+        </article>
       </section>
     </>
   )

@@ -3,36 +3,44 @@
   "services": "",
   "skills": [
     {
-      "name": "HTML",
-      "level": ""
+      "name": "HTML/CSS",
+      "level": "70"
     },
     {
       "name": "JavaScript",
-      "level": ""
+      "level": "80"
     },
     {
       "name": "TypeScript",
-      "level": ""
-    },
-    {
-      "name": "CSS",
-      "level": ""
+      "level": "50"
     },
     {
       "name": "ReactJS",
-      "level": ""
+      "level": "70"
+    },
+    {
+      "name": "NodeJS",
+      "level": "60"
     },
     {
       "name": "PHP",
-      "level": ""
+      "level": "50"
     },
     {
       "name": "MySQL",
-      "level": ""
+      "level": "50"
+    },
+    {
+      "name": "aws",
+      "level": "10"
     },
     {
       "name": "MongoDB",
-      "level": ""
+      "level": "50"
+    },
+    {
+      "name": "Docker",
+      "level": "30"
     }
   ]
 }
