@@ -22,6 +22,15 @@
   opacity: 1;
 }
 
+@media (max-width: 1025px) and (min-width: 551px) {
+  .socialMediaWrapper {
+    top: unset;
+    flex-direction: row;
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .socialMediaWrapper {
     top: unset;

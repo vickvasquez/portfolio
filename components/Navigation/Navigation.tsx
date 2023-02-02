@@ -35,7 +35,7 @@ function Navigation({ routes }: Props) {
               <span className={styles.line} />
             </button>
           </span>
-          {routes.map(route => <Link href={route.pathname} key={route.name}>{route.name}</Link>)}
+          {routes.map(route => <Link onClick={toggleNavigation} href={route.pathname} key={route.name}>{route.name}</Link>)}
         </nav>
       </RenderCondition>
     </>
