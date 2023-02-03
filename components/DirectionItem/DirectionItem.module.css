@@ -1,0 +1,15 @@
+.directionItemWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.title {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.value {
+  font-size: 14px;
+  opacity: .7;
+}

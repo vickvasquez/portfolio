@@ -38,4 +38,8 @@
     padding: 10px 0;
     width: 100%;
   }
+
+  .socialMediaWrapper img {
+    margin: 16px;
+  }
 }
