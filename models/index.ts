@@ -1,4 +1,5 @@
 export * from './about.model';
+export * from './analytics.model';
 export * from './contact.model';
 export * from './me.model';
 export * from './portfolio.model';
