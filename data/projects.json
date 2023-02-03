@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "image": "/assets/npm.png",
+      "name": "ts-match",
+      "description": "Is a switch alternative, but more cleaned and elegant.",
+      "uri": "https://www.npmjs.com/package/@vickvasquez/ts-match"
+    },
+    {
+      "image": "/assets/gc.webp",
+      "name": "Grain Chain",
+      "description": "GrainChain creates innovative solutions to solve the complex challenges facing the global agricultural industry at every stage of the supply chain. We use cutting edge technology to make the process easier, faster and safer for all participants.",
+      "uri": "https://www.grainchain.io/"
+    },
+    {
+      "image": "/assets/100l.png",
+      "name": "100 Ladrillos",
+      "description": "Plataforma de inversión de bienes raices.",
+      "uri": "https://www.100ladrillos.com/"
+    },
+    {
+      "image": "/assets/atexto.png",
+      "name": "Atexto",
+      "description": "Atexto is the most powerful platform to improve speech recognition accuracy, fairness, and language support through customized voice data collected in hours, not months.",
+      "uri": "https://www.atexto.com/"
+    },
+    {
+      "image": "/assets/regiztra.png",
+      "name": "LobbyFix",
+      "description": "Agiliza el registro de visitantes y mejora el control de accesos.",
+      "uri": "https://www.lobbyfix.com/"
+    },
+    {
+      "image": "/assets/mnn.png",
+      "name": "Mi negocio en las nubes",
+      "description": "El mejor sistema administrativo para tu negocio complementamente en linea, Controla, administra, gestiona y crece de manera exponencial tu negocio.",
+      "uri": "https://minegocioenlasnubes.net/"
+    },
+    {
+      "image": "/assets/ia.png",
+      "name": "Impulsando Academy",
+      "description": "Plataforma de educación especializada en línea que busca ayudar a las personas a crecer profesional y académicamente a través de cursos especializados, que les otorgue conocimientos para un óptimo desempeño en áreas de alto impacto.",
+      "uri": ""
+    },
+    {
+      "image": "/assets/jobie.png",
+      "name": "Jobie",
+      "description": "Plataforma inteligente de reclutamiento de los mejores talentos, donde las personas encuentran su empleo ideal mediante nuestros algoritmos de inteligencia artificial y las empresas encuentran el mejor talento On Demand.",
+      "uri": ""
+    }
+  ]
+}

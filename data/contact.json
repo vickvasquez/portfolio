@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "icon": "/assets/icons/icon-name.png",
+      "title": "Name",
+      "value": "Victor Vásquez Jiménez"
+    },
+    {
+      "icon": "/assets/icons/icon-location.png",
+      "title": "Location",
+      "value": "Oaxaca, México"
+    },
+    {
+      "icon": "/assets/icons/icon-email.png",
+      "title": "Email",
+      "value": "vasjvic44@gmail.com"
+    }
+  ]
+}

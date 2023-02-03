@@ -1,11 +1,16 @@
 import Image from 'next/image'
 
-import styles from './about.module.css'
-import image from '../../public/assets/about-me.jpg'
+import { About, Data } from '@/models'
+import { getDataAboutMe } from './services/getDataAboutMe.service'
 import { ProgressBar } from '@/components'
-import about from '../../data/about.json'
+import image from '../../public/assets/about-me.jpg'
+import styles from './about.module.css'
+import { getMe } from '../services/page.service'
 
-function Home() {
+async function Home() {
+  const about = await getDataAboutMe<About>()
+  const me = await getMe<Data>()
+
   return (
     <>
       <h1 className='title-page'>About <span className='text-red'>Me</span></h1>
@@ -13,13 +18,12 @@ function Home() {
       <section className={styles.section}>
         <article>
           <h2 className={styles.subtitle}>
-            I{`'`}m <span className='text-red'>Software Engineer</span> based in
-            <p>Oaxaca, México.</p>
+            I{`'`}m <span className='text-red'>{me.careerName}</span> based in
+            <p>{me.location.city}, {me.location.country}.</p>
           </h2>
 
           <p className={styles.description}>
-            With +8 years of experience as a professional Software Engineer, I have acquired the skills and knowledge necessary to make your project a success.
-            I enjoy every step while working.
+            {about.description}
           </p>
           <a href="/assets/vickvasquez.pdf" download className={styles.containerButton}>
             <button className={styles.button}>

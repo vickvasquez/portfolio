@@ -1,5 +1,9 @@
 {
   "name": "Vick",
   "lastName": "Vásquez Jiménez",
-  "careerName": "Software Engineer"
+  "careerName": "Software Engineer",
+  "location": {
+    "country": "México",
+    "city": "Oaxaca"
+  }
 }

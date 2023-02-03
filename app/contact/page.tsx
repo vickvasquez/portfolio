@@ -1,29 +1,13 @@
 import { ContactItem, SocialMedia } from "@/components"
-import { SocialMediaModel } from "@/models"
+import { Contact, SocialMediaModel } from "@/models"
 import { getSocialMedias } from "../services/page.service"
 
 import styles from './contact.module.css'
-
-const DATA_OF_CONTACT = [
-  {
-    icon: '/assets/icons/icon-name.png',
-    title: 'Name',
-    value: 'Victor Vásquez Jiménez'
-  },
-  {
-    icon: '/assets/icons/icon-location.png',
-    title: 'Location',
-    value: 'Oaxaca, México'
-  },
-  {
-    icon: '/assets/icons/icon-email.png',
-    title: 'Email',
-    value: 'vasjvic44@gmail.com'
-  },
-]
+import { getDataContact } from "./services/getDataContact.service"
 
 async function Contact() {
   const socialMedias = await getSocialMedias<SocialMediaModel[]>()
+  const contact = await getDataContact<Contact[]>()
 
   return (
     <>
@@ -32,7 +16,7 @@ async function Contact() {
       <h2 className="subtitle-page"><span className="text-red">Get</span> in Touch.</h2>
       <div className={styles.contactContainer}>
         <div>
-          {DATA_OF_CONTACT.map(data => <ContactItem key={data.title} icon={data.icon} title={data.title} value={data.value} />)}
+          {contact.map(data => <ContactItem key={data.title} icon={data.icon} title={data.title} value={data.value} />)}
         </div>
       </div>
     </>
