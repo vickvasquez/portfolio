@@ -1,24 +1,29 @@
 .main {
-  display: grid;
   height: 100vh;
   width: 100%;
-  place-items: center;
 }
 
 .contactContainer {
-  width: 40%;
+  display: grid;
+  height: 70vh;
+  place-items: center;
+  width: inherit;
+}
+
+.contactContainer > div {
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 16px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  padding: 16px;
+  width: 40%;
 }
 
 .contactContainer div {
-  padding: 16px
+  padding: 16px;
 }
 
 @media screen and (max-width: 768px) {
-  .contactContainer {
+  .contactContainer > div {
     width: 100%;
     background-color: transparent;
     box-shadow: unset;

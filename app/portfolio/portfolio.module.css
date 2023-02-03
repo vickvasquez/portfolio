@@ -1,0 +1,114 @@
+.portfolioWrapper {
+  padding: 0 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolioItem {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.portfolioItem img,
+.portfolioItem .portfolioText {
+  width: 40%;
+}
+
+.portfolioItem img {
+  height: 400px;
+}
+
+.portfolioText {
+  background-color: #080808;
+  position: relative;
+  margin-left: -40px;
+  margin-bottom: 20px;
+}
+
+.portfolioText h2 {
+  font-size: 35px;
+  font-weight: 200;
+  padding: 20px;
+  color: var(--red);
+  transition: all .4s ease;
+}
+
+.portfolioText p {
+  padding: 20px;
+  padding-bottom: 45px;
+}
+
+.portfolioLink {
+  display: inline-block;
+  font-size: 16px;
+  opacity: .8;
+  font-weight: 200;
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--red);
+  transition: all .4s ease;
+  outline: none;
+  margin: 20px;
+  border: 1.5px solid var(--red);
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all .4s ease;
+}
+
+.portfolioLink::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 200%;
+  transform: rotate(-15deg) translateY(-20px);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #c70039;
+  transition: all .7s ease;
+}
+
+.portfolioLink:hover {
+  opacity: 1;
+  color: var(--white);
+}
+
+.portfolioLink:hover::before {
+  opacity: 1;
+  width: 120%;
+}
+
+.buttonText {
+  position: relative;
+  z-index: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioWrapper {
+    padding: 0 30px;
+  }
+
+  .portfolioItem {
+    flex-direction: column;
+  }
+
+  .portfolioItem img,
+  .portfolioItem .portfolioText {
+    width: 100%;
+  }
+
+  .portfolioText h2 {
+    padding: 10px;
+    font-size: 22px;
+  }
+
+  .portfolioItem img {
+    height: 200px;
+  }
+}

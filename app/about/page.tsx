@@ -8,9 +8,8 @@ import about from '../../data/about.json'
 function Home() {
   return (
     <>
-      <header className={styles.title}>
-        <h1>About <span className='text-red'>Me</span></h1>
-      </header>
+      <h1 className='title-page'>About <span className='text-red'>Me</span></h1>
+      <p className='subtitle-page'>Get to Know <span className='text-red'>me.</span></p>
       <section className={styles.section}>
         <article>
           <h2 className={styles.subtitle}>
@@ -35,7 +34,7 @@ function Home() {
         <article className={styles.containerSkills}>
           {
             about.skills.map(skill => (
-              <ProgressBar title={skill.name} progress={skill.level} key={skill.name}/>
+              <ProgressBar title={skill.name} progress={skill.level} key={skill.name} />
             ))
           }
         </article>

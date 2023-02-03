@@ -1,4 +1,4 @@
-import { DirectionItem, SocialMedia } from "@/components"
+import { ContactItem, SocialMedia } from "@/components"
 import { SocialMediaModel } from "@/models"
 import { getSocialMedias } from "../services/page.service"
 
@@ -28,8 +28,12 @@ async function Contact() {
   return (
     <>
       <SocialMedia socialMedias={socialMedias} />
+      <h1 className='title-page'>Contact <span className="text-red">Me</span></h1>
+      <h2 className="subtitle-page"><span className="text-red">Get</span> in Touch.</h2>
       <div className={styles.contactContainer}>
-        {DATA_OF_CONTACT.map(data => <DirectionItem key={data.title} icon={data.icon} title={data.title} value={data.value} />)}
+        <div>
+          {DATA_OF_CONTACT.map(data => <ContactItem key={data.title} icon={data.icon} title={data.title} value={data.value} />)}
+        </div>
       </div>
     </>
   )

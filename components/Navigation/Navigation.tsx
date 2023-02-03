@@ -21,7 +21,7 @@ function Navigation({ routes }: Props) {
   return (
     <>
       <div className={styles.navigationBar}>
-        <button onClick={toggleNavigation} className={styles.hamburgerMenu}>
+        <button onClick={toggleNavigation} aria-label="Open navigation"className={styles.hamburgerMenu}>
           <span className={styles.line} />
           <span className={styles.line} />
           <span className={styles.line} />
@@ -30,7 +30,7 @@ function Navigation({ routes }: Props) {
       <RenderCondition condition={displayNavigation}>
         <nav className={styles.navigationWrapper}>
           <span className={styles.closeWrapper}>
-            <button onClick={toggleNavigation} className={styles.closeButton}>
+            <button onClick={toggleNavigation} aria-label="Close navigation" className={styles.closeButton}>
               <span className={styles.line} />
               <span className={styles.line} />
             </button>

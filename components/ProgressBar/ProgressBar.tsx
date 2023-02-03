@@ -10,7 +10,7 @@ function ProgressBar({ title, progress }: Props) {
     <div>
       <p className={styles.title}>{title}</p>
       <div className={styles.progressbarWrapper}>
-        <span style={{ width: `${progress}%` }} className={styles.progress}>{progress}%</span>
+        <span style={{ width: `${progress}%` }} className={styles.progress} />
       </div>
     </div>
   )
