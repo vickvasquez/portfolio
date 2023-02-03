@@ -4,14 +4,9 @@
   padding: 0 60px;
 }
 
-.titleSkills,
-.title {
+.titleSkills {
   padding-top: 60px;
   text-align: center;
-}
-
-.titleSkills,
-.title h1 {
   font-size: 45px;
   font-family: var(--raleway-font);
 }
@@ -113,8 +108,7 @@
     padding: 0 30px
   }
 
-  .titleSkills,
-  .title {
+  .titleSkills {
     font-size: 30px;
   }
 
