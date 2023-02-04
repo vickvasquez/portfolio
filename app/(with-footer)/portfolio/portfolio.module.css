@@ -14,7 +14,10 @@
   position: relative;
 }
 
-.portfolioItem img,
+.portfolioItem img {
+  width: 50%;
+}
+
 .portfolioItem .portfolioText {
   width: 40%;
 }

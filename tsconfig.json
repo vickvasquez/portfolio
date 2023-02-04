@@ -24,6 +24,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Navigation/Navigation.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Navigation/Navigation.tsx", "scripts/create-db.js", "utils/index.mjs"],
   "exclude": ["node_modules"]
 }
