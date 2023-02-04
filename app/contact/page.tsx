@@ -10,7 +10,7 @@ async function Contact() {
   const contact = await getDataContact<Contact[]>()
 
   return (
-    <>
+    <main className={styles.main}>
       <SocialMedia socialMedias={socialMedias} />
       <h1 className='title-page'>Contact <span className="text-red">Me</span></h1>
       <h2 className="subtitle-page"><span className="text-red">Get</span> in Touch.</h2>
@@ -19,7 +19,7 @@ async function Contact() {
           {contact.map(data => <ContactItem key={data.title} icon={data.icon} title={data.title} value={data.value} />)}
         </div>
       </div>
-    </>
+    </main>
   )
 }
 

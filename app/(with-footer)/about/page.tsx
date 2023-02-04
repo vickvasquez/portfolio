@@ -3,16 +3,16 @@ import Image from 'next/image'
 import { About, Data } from '@/models'
 import { getDataAboutMe } from './services/getDataAboutMe.service'
 import { ProgressBar } from '@/components'
-import image from '../../public/assets/about-me.jpg'
+import image from '../../../public/assets/about-me.jpg'
 import styles from './about.module.css'
-import { getMe } from '../services/page.service'
+import { getMe } from '../../services/page.service'
 
 async function Home() {
   const about = await getDataAboutMe<About>()
   const me = await getMe<Data>()
 
   return (
-    <>
+    <main className={styles.main}>
       <h1 className='title-page'>About <span className='text-red'>Me</span></h1>
       <p className='subtitle-page'>Get to Know <span className='text-red'>me.</span></p>
       <section className={styles.section}>
@@ -43,7 +43,7 @@ async function Home() {
           }
         </article>
       </section>
-    </>
+    </main>
   )
 }
 
