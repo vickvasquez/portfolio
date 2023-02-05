@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   swcMinify: true,
   compress: true,
   experimental: {
@@ -7,7 +8,7 @@ const nextConfig = {
     fontLoaders: [
       { loader: '@next/font/google', options: { subsets: ['latin'] } },
     ],
-  }
+  },
 }
 
 module.exports = nextConfig
