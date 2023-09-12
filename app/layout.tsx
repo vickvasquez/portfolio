@@ -18,6 +18,12 @@ export default function RootLayout({
         {children}
         <RenderCondition condition={ANALYTICS !== ''}>
           <NextScript
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8252902407962658"
+            async
+            crossOrigin='anonymous'
+            strategy='afterInteractive'
+          />
+          <NextScript
             src={ANALYTICS}
             strategy='afterInteractive'
           />

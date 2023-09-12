@@ -1,6 +1,12 @@
 {
   "data": [
     {
+      "image": "/assets/syncmarket.png",
+      "name": "SyncMarket",
+      "description": "Es una potente herramienta para realizar publicaciones masivas en marketplace de Facebook",
+      "uri": "https://sync-market.netlify.app/"
+    },
+    {
       "image": "/assets/npm.png",
       "name": "ts-match",
       "description": "Is a switch alternative, but more cleaned and elegant.",
