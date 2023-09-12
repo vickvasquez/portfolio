@@ -20,3 +20,9 @@ Replace the content of each file inside the data folder with your personal data.
 ```bash
 pnpm start:api
 ```
+
+## Deploy in Netlify
+
+1.- Run server api on local `pnpm api:start`
+2.- Run ngrok to api in local
+3.- Set nrok url in env vars in netlify
